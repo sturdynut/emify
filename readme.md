@@ -1,57 +1,26 @@
-# node-cli-boilerplate
+# emify
 
-> Boilerplate to kickstart creating a Node.js command-line tool
+# emify [![Build Status](https://travis-ci.org/sturdynut/emify.svg?branch=master)](https://travis-ci.org/sturdynut/emify)
 
-This is what I use for [my own command-line tools](https://www.npmjs.com/~sindresorhus).
-
-Also check out [`node-module-boilerplate`](https://github.com/sindresorhus/node-module-boilerplate).
-
-## Getting started
-
-**Click the "Use this template" button.**
-
-Alternatively, create a new directory and then run:
-
-```
-$ curl -fsSL https://github.com/sindresorhus/node-cli-boilerplate/archive/master.tar.gz | tar -xz --strip-components=1
-```
-
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-nm).
-
-
----
-
-**Remove everything from here and above**
-
----
-
-
-# unicorn-fun-cli [![Build Status](https://travis-ci.org/YOUR-GITHUB-USERNAME/unicorn-fun-cli.svg?branch=master)](https://travis-ci.org/YOUR-GITHUB-USERNAME/unicorn-fun-cli)
-
-> My awesome command-line tool
+> A CLI to convert PX to *EM units
 
 
 ## Install
 
 ```
-$ npm install --global unicorn-fun-cli
+$ npm install --global emify
 ```
-
 
 ## Usage
 
 ```
-$ unicorn-fun --help
+$ emify [input]
 
-  Usage
-    $ unicorn-fun [input]
+	Options
+	  --base  10px  [Default: 16px]
+	  --unit  em  [Default: rem]
 
-  Options
-    --postfix  Lorem ipsum  [Default: rainbows]
-
-  Examples
-    $ cli-name
-    unicorns & rainbows
-    $ cli-name ponies
-    ponies & rainbows
+	Examples
+	  $ emify 12px --base 14px --unit rem
+	  1.17rem
 ```
