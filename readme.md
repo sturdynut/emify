@@ -1,5 +1,3 @@
-# emify
-
 # emify [![Build Status](https://travis-ci.org/sturdynut/emify.svg?branch=master)](https://travis-ci.org/sturdynut/emify)
 
 > A CLI to convert PX to *EM units
