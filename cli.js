@@ -8,9 +8,9 @@ const cleanString = val => val.match(/\d+/g).map(Number);
 
 const emify = (val, args) => {
 	const {base, unit} = args;
-	const computed = cleanString(base) / cleanString(val);
-	const remaining = cleanString(base) % cleanString(val);
-	return `${remaining ? computed.toFixed(2) : computed}${unit}`;
+	const computed = cleanString(val) / cleanString(base);
+	const formatted = computed % 1 ? computed.toFixed(2) : computed;
+	return `${formatted}${unit}`;
 };
 
 const cli = meow(
